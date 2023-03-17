@@ -3,25 +3,17 @@
 /**
  * main - Entry point
  *
- * Prints all the numbers in base 16;
+ * print the alphabet in reverse order lowercase
+ *
  * Return: Always 0.
 */
 
 int main(void)
 {
-	int i;
 	char c;
 
-	for (i = 0; i < 16; i++)
+	for (c = 'z'; c >= 'a'; c--)
 	{
-	if (i < 10)
-	{
-	c = i + '0';
-	}
-	else
-	{
-	c = i - 10 + 'a';
-	}
 	putchar(c);
 	}
 	putchar('\n');
